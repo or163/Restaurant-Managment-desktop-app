@@ -1,6 +1,6 @@
 # Restaurant-Managment-desktop-app
 
-for manager view
+for manager view </br>
 user: manager
 password: manager
 
