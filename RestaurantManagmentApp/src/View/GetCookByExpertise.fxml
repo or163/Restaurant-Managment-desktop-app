@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Querries.GetCookByExpertiseController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="96.0" layoutY="14.0" prefHeight="17.0" prefWidth="385.0" text="Get Cook by Expertise">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="cooksTV" layoutX="20.0" layoutY="110.0" prefHeight="347.0" prefWidth="559.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="25.0" text="Id" />
+            <TableColumn fx:id="fname" prefWidth="89.0" text="First Name" />
+            <TableColumn fx:id="lname" minWidth="8.66668701171875" prefWidth="89.0" text="Last Name" />
+            <TableColumn fx:id="bday" prefWidth="89.0" text="Date of Birth" />
+            <TableColumn fx:id="gender" minWidth="0.0" prefWidth="89.0" text="Gender" />
+            <TableColumn fx:id="expertise" prefWidth="88.0" text="Expertise" />
+            <TableColumn fx:id="chef" prefWidth="88.0" text="Is Chef" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="expChoice" layoutX="131.0" layoutY="59.0" onAction="#getCooksByExpertise" prefHeight="25.0" prefWidth="172.0" />
+      <Label layoutX="24.0" layoutY="59.0" prefHeight="25.0" prefWidth="107.0" text="Choose Expertise : " />
+   </children>
+</AnchorPane>

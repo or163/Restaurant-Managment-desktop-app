@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Edit.EditCookController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="107.0" layoutY="14.0" prefHeight="17.0" prefWidth="385.0" style="-fx-background-radius: 12; -fx-background-color: #ffffff80;" text="Edit Cook">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button alignment="TOP_CENTER" layoutX="250.0" layoutY="421.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="100.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="23.0" layoutY="98.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="First Name :" />
+      <Label layoutX="23.0" layoutY="138.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Last Name :" />
+      <Label layoutX="23.0" layoutY="178.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Date of Birth :" />
+      <Label layoutX="23.0" layoutY="218.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Gender :" />
+      <Label layoutX="23.0" layoutY="258.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Expertise :" />
+      <Label layoutX="23.0" layoutY="301.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Is Chef? :" />
+      <TextField fx:id="txtFName" layoutX="113.0" layoutY="96.0" prefHeight="30.0" prefWidth="100.0" />
+      <TextField fx:id="txtLName" layoutX="113.0" layoutY="136.0" prefHeight="30.0" prefWidth="100.0" />
+      <DatePicker fx:id="date" layoutX="113.0" layoutY="176.0" prefHeight="30.0" prefWidth="100.0" />
+      <ChoiceBox fx:id="gender" layoutX="113.0" layoutY="216.0" prefHeight="30.0" prefWidth="100.0" />
+      <ChoiceBox fx:id="expertise" layoutX="113.0" layoutY="256.0" prefHeight="30.0" prefWidth="100.0" />
+      <RadioButton fx:id="isChefYes" layoutX="113.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="chefTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="isChefNo" layoutX="163.0" layoutY="305.0" mnemonicParsing="false" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="No" toggleGroup="$chefTG" />
+      <Label fx:id="message" alignment="TOP_CENTER" layoutX="161.0" layoutY="456.0" prefHeight="25.0" prefWidth="295.0" textFill="#d22828" />
+      <Label layoutX="23.0" layoutY="58.0" prefHeight="25.0" prefWidth="84.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Choose Cook:" />
+      <ComboBox fx:id="WhichCook" layoutX="113.0" layoutY="58.0" onAction="#CookSelected" prefHeight="25.0" prefWidth="457.0" />
+   </children>
+</AnchorPane>

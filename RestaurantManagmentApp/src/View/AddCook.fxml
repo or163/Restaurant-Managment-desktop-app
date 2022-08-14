@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="label" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddCookController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="180.0" layoutY="14.0" maxHeight="35.0" prefHeight="35.0" prefWidth="241.0" text="Add Cook">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="59.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="First Name :" />
+      <Label layoutX="22.0" layoutY="99.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="Last Name :" />
+      <Label layoutX="22.0" layoutY="139.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="Date of Birth :" />
+      <Label layoutX="22.0" layoutY="179.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="Gender :" />
+      <Label layoutX="22.0" layoutY="219.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="Expertise :" />
+      <Label layoutX="22.0" layoutY="262.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="75.0" text="Is Chef? :" />
+      <TextField fx:id="txtFName" layoutX="112.0" layoutY="54.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="100.0" />
+      <TextField fx:id="txtLName" layoutX="112.0" layoutY="94.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="100.0" />
+      <DatePicker fx:id="date" layoutX="112.0" layoutY="134.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="100.0" />
+      <ComboBox fx:id="gender" layoutX="112.0" layoutY="174.0" prefHeight="30.0" prefWidth="100.0" />
+      <ComboBox fx:id="expertise" layoutX="112.0" layoutY="214.0" prefHeight="30.0" prefWidth="100.0" />
+      <RadioButton fx:id="isChefYes" layoutX="112.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="label" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="chefTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="isChefNo" layoutX="162.0" layoutY="263.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="label" text="No" toggleGroup="$chefTG" />
+      <Button alignment="TOP_CENTER" layoutX="250.0" layoutY="421.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="100.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" alignment="TOP_CENTER" layoutX="167.0" layoutY="456.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="29.0" prefWidth="266.0" textFill="#d22828" />
+   </children>
+</AnchorPane>

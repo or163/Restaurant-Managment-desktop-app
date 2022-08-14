@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="label" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddCustomerToBlackListController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="115.0" layoutY="14.0" prefHeight="35.0" prefWidth="339.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Add Customer To BlackList">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="customerLV" layoutX="16.0" layoutY="102.0" onKeyPressed="#showCustomerImage" onMouseClicked="#showCustomerImage" prefHeight="325.0" prefWidth="568.0" />
+      <Button layoutX="274.0" layoutY="436.0" mnemonicParsing="false" onAction="#AddToBList" text="Add" />
+      <Label layoutX="18.0" layoutY="81.0" prefHeight="17.0" prefWidth="206.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Please select which customer to add:" />
+      <Label fx:id="message" alignment="CENTER" layoutX="150.0" layoutY="468.0" prefHeight="17.0" prefWidth="299.0" style="-fx-background-color: #ffffff80;" textFill="#ce2020" />
+      <ImageView fx:id="custPicture" fitHeight="84.0" fitWidth="124.0" layoutX="458.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pannelRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #c5c5c5;" styleClass="bodybgrest" stylesheets="@/application/mainBackground.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserUI.UserController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcome" alignment="TOP_CENTER" layoutX="11.0" layoutY="14.0" prefHeight="169.0" prefWidth="571.0" stylesheets="@/application/background.css">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+            <Label fx:id="TimeMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="206.0" prefHeight="114.0" prefWidth="491.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane fx:id="anchor" prefWidth="100.0" style="-fx-background-color: #171717;" stylesheets="@/application/application.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbox" layoutY="50.0" prefHeight="450.0" prefWidth="100.0" style="-fx-background-color: #171717;">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goHome" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Home" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@/Icons/home_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goMakeOrder" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Menu&#10;&amp; Order" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@/Icons/Create_Order_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goEdit" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Edit&#10;Details" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@/Icons/settings_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goQuerries" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="User&#10;Querries" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@/Icons/system_task_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font></Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goHistory" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="History" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/order_history_24px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font></Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goShoppingCart" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Shopping&#10;Cart" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/shopping_cart_64px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#SaveToSerelizebaleFile" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Save" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/save_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#GoLogin" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Log-out" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/logout_rounded_left_64px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: #171717;" text="Exit" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/shutdown_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#MuteOnOff" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: #171717;">
+                     <children>
+                        <ImageView fx:id="Audio" fitHeight="32.0" fitWidth="36.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@/Icons/audio_64px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="65.0" fitWidth="37.0" onMouseClicked="#showMenu" y="-7.0">
+               <image>
+                  <Image url="@/Icons/menugr_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </ImageView>
+            <ImageView fx:id="profilePic" fitHeight="50.0" fitWidth="62.0" layoutX="38.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,23 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.button:hover{
+    -fx-border-style: solid;
+    -fx-font-family: "Berlin Sans FB";
+}
+
+*{
+	-fx-font-size: 100%;
+	-fx-font-family: "Berlin Sans FB";
+	
+}
+.list-view .list-cell:even {
+-fx-background-color: darkblue;
+-fx-text-fill: lightblue;
+}
+.list-view .list-cell:odd {
+-fx-background-color: lightblue;
+-fx-text-fill: darkblue;
+}
+.list-view .list-cell:hover {
+-fx-border-style: solid;
+}
+

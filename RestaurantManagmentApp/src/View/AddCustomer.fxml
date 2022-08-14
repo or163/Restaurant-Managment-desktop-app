@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" styleClass="label" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddCustomerController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="117.0" layoutY="14.0" prefHeight="17.0" prefWidth="385.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="121.0" prefHeight="40.0" prefWidth="90.0" text="Password :" />
+      <Label layoutX="29.0" layoutY="81.0" prefHeight="40.0" prefWidth="90.0" text="User Name :" />
+      <Label layoutX="29.0" layoutY="160.0" prefHeight="40.0" prefWidth="90.0" text="First Name :" />
+      <Label layoutX="29.0" layoutY="195.0" prefHeight="40.0" prefWidth="90.0" text="Last Name :" />
+      <Label layoutX="29.0" layoutY="236.0" prefHeight="25.0" prefWidth="90.0" text="Date of Birth :" />
+      <Label layoutX="29.0" layoutY="275.0" prefHeight="40.0" prefWidth="90.0" text="Gender :" />
+      <Label layoutX="29.0" layoutY="313.0" prefHeight="40.0" prefWidth="90.0" text="Neighborhood :" />
+      <Label layoutX="29.0" layoutY="350.0" prefHeight="37.0" prefWidth="119.0" text="Senstitive to Lactose?" />
+      <Label layoutX="30.0" layoutY="387.0" prefHeight="37.0" prefWidth="118.0" text="Sensitive to Gluten?" />
+      <TextField fx:id="userName" layoutX="127.0" layoutY="75.0" prefHeight="30.0" prefWidth="153.0" />
+      <PasswordField fx:id="passw" layoutX="127.0" layoutY="115.0" prefHeight="30.0" prefWidth="153.0" />
+      <TextField fx:id="txtFName" layoutX="127.0" layoutY="154.0" prefHeight="30.0" prefWidth="153.0" />
+      <TextField fx:id="txtLName" layoutX="127.0" layoutY="192.0" prefHeight="30.0" prefWidth="153.0" />
+      <DatePicker fx:id="date" layoutX="126.0" layoutY="231.0" prefHeight="32.0" prefWidth="153.0" />
+      <Label fx:id="message" alignment="TOP_CENTER" layoutX="29.0" layoutY="457.0" prefHeight="17.0" prefWidth="541.0" textFill="#ef1414" />
+      <ComboBox fx:id="gender" layoutX="125.0" layoutY="272.0" prefHeight="25.0" prefWidth="153.0" />
+      <ComboBox fx:id="neighborhood" layoutX="125.0" layoutY="310.0" prefHeight="25.0" prefWidth="153.0" />
+      <RadioButton fx:id="lactoseYes" layoutX="152.0" layoutY="354.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="54.0" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="lactoseTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="lactoseNo" layoutX="209.0" layoutY="354.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="54.0" text="No" toggleGroup="$lactoseTG" />
+      <RadioButton fx:id="glutenYes" layoutX="152.0" layoutY="390.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="glutenTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="glutenNo" layoutX="209.0" layoutY="390.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="54.0" text="No" toggleGroup="$glutenTG" />
+      <Button layoutX="367.0" layoutY="201.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="25.0" prefWidth="156.0" text="Upload Image" />
+      <Button fx:id="saveButton" alignment="TOP_CENTER" layoutX="250.0" layoutY="423.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="100.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="profilePicture" fitHeight="115.0" fitWidth="143.0" layoutX="376.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/addProfileImage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="368.0" layoutY="181.0" prefHeight="17.0" prefWidth="156.0" text="Add Profile Image (Optional)" />
+      <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="289.0" layoutY="118.0" onMouseEntered="#showHidePassword" onMouseExited="#showHidePassword" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/Icons/invisible_100px.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="showPassw" editable="false" layoutX="127.0" layoutY="115.0" prefHeight="30.0" prefWidth="153.0" />
+   </children>
+</AnchorPane>

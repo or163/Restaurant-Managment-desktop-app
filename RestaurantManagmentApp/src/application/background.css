@@ -1,0 +1,61 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+Label{
+     -fx-background-color:  #ffffff80;
+     -fx-background-radius: 12;
+     -fx-max-height: 25;
+	 -fx-font-family: "Berlin Sans FB";
+     }
+Button{
+	-fx-font-family: "Berlin Sans FB";
+}
+TextField{
+	-fx-font-family: "Berlin Sans FB";
+}
+CohiseBox.MenuItem.Label{
+	-fx-font-family: "Berlin Sans FB";
+}
+CheckMenuItem.list-cell{
+	-fx-font-family: "Berlin Sans FB";
+}
+ListCell{
+	-fx-font-family: "Berlin Sans FB";
+}
+CellData{
+	-fx-font-family: "Berlin Sans FB";
+}
+RadioButton{
+	-fx-font-family: "Berlin Sans FB";
+}
+ComboBox{
+	-fx-font-family: "Berlin Sans FB";
+}
+ListView.list-cell{
+	-fx-font-family: "Berlin Sans FB";
+}
+TableColumn{
+	-fx-font-family: "Berlin Sans FB";
+}
+TableColumn.list-cell{
+	-fx-font-family: "Berlin Sans FB";
+}
+.list-view .list-cell:odd {
+	-fx-font-family: "Berlin Sans FB"
+}
+
+.list-view .list-cell:even {
+	-fx-font-family: "Berlin Sans FB";
+}
+
+.root{
+	-fx-font-family:"Berlin Sans FB";
+}
+.text{
+	-fx-font-family: "Berlin Sans FB"
+}
+DatePicker{
+	-fx-font-family: "Berlin Sans FB"
+}
+Text{
+	-fx-font-family: "Berlin Sans FB"
+}

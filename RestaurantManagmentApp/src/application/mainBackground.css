@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.bodybgrest{
+ -fx-background-image: url('/Icons/restaurant-management.jpg');
+ -fx-background-size: stretch;
+	
+}
+
+.table-row-cell:selected{
+	-fx-background-color: #c5a65b;
+}
+
+.list-view .list-cell:selected {
+-fx-background-color: #c5a65b;
+}
+
+.table-row-cell:hover{
+	-fx-border-style: dashed;
+	
+}

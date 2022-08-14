@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserUI.UserHistoryController">
+   <children>
+      <Label alignment="CENTER" layoutX="209.0" layoutY="14.0" prefHeight="35.0" prefWidth="181.0" text="Order History">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ordersTV" layoutX="5.0" layoutY="75.0" prefHeight="363.0" prefWidth="588.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="35.33331298828125" text="Id" />
+          <TableColumn fx:id="dishes" prefWidth="272.66668701171875" text="Dishes" />
+            <TableColumn fx:id="delivery" prefWidth="277.3333740234375" text="Delivery" />
+        </columns>
+      </TableView>
+      <Button layoutX="5.0" layoutY="445.0" mnemonicParsing="false" onAction="#goMakeOrder" prefHeight="25.0" prefWidth="174.0" text="Add Order" />
+      <Button layoutX="419.0" layoutY="445.0" mnemonicParsing="false" onAction="#remove" prefHeight="25.0" prefWidth="174.0" text="Remove From History" />
+      <Label layoutX="8.0" layoutY="49.0" prefHeight="25.0" prefWidth="59.0" text="Orders:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="472.0" text="*Showing only orders that connected to a delivery (orderByCustomer hashmap)">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

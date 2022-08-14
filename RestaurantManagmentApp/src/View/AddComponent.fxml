@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddComponentController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="168.0" layoutY="14.0" maxHeight="35.0" prefHeight="35.0" prefWidth="265.0" text="Add Component">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="86.0" prefHeight="25.0" prefWidth="57.0" text="Name :" />
+      <Label layoutX="29.0" layoutY="138.0" prefHeight="25.0" prefWidth="73.0" text="with lactose?" />
+      <Label layoutX="29.0" layoutY="188.0" prefHeight="25.0" prefWidth="73.0" text="with gluten?" />
+      <Label layoutX="29.0" layoutY="228.0" prefHeight="25.0" prefWidth="57.0" text="Price :" />
+      <TextField fx:id="name" layoutX="112.0" layoutY="84.0" prefHeight="30.0" prefWidth="101.0" />
+      <RadioButton fx:id="lactoseYes" layoutX="113.0" layoutY="142.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="lactoseTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="lactoseNo" layoutX="176.0" layoutY="142.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="No" toggleGroup="$lactoseTG" />
+      <RadioButton fx:id="glutenYes" layoutX="112.0" layoutY="192.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="glutenTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="glutenNo" layoutX="175.0" layoutY="192.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="57.0" text="No" toggleGroup="$glutenTG" />
+      <TextField fx:id="price" layoutX="112.0" layoutY="226.0" prefHeight="30.0" prefWidth="101.0" promptText="Enter a number" />
+      <Button alignment="TOP_CENTER" layoutX="249.0" layoutY="420.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="101.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" alignment="TOP_CENTER" layoutX="188.0" layoutY="460.0" prefHeight="17.0" prefWidth="219.0" textFill="#e22424" />
+   </children>
+</AnchorPane>

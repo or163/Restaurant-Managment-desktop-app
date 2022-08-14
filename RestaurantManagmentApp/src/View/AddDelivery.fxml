@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddDeliveryController">
+   <children>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="14.0" prefHeight="35.0" prefWidth="166.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Add Delivery">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="deliveryArea" layoutX="135.0" layoutY="61.0" onAction="#getDPS" prefHeight="30.0" prefWidth="433.0" />
+      <ComboBox fx:id="deliveryPersons" layoutX="136.0" layoutY="104.0" prefHeight="30.0" prefWidth="433.0" promptText="Choose a Delivery Area first" />
+      <Label alignment="CENTER" layoutX="277.0" layoutY="140.0" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Date of Delivery:" />
+      <Label alignment="CENTER" layoutX="34.0" layoutY="144.0" prefHeight="22.0" prefWidth="72.0" style="-fx-background-radius: 12; -fx-background-color: #ffffff80;" text="Is Deliverd?:" />
+      <RadioButton fx:id="isDeliverdYes" layoutX="126.0" layoutY="146.0" mnemonicParsing="false" style="-fx-background-color: #ffffff70; -fx-background-radius: 15;" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="deliveyTG" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="isDeliverdNo" layoutX="177.0" layoutY="146.0" mnemonicParsing="false" style="-fx-background-color: #ffffff70; -fx-background-radius: 15;" text="No" toggleGroup="$deliveyTG" />
+      <DatePicker fx:id="date" layoutX="385.0" layoutY="140.0" prefHeight="30.0" prefWidth="100.0" />
+      <Label fx:id="lblStatus" layoutX="242.0" layoutY="421.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Please fill up the form" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="199.0" prefHeight="22.0" prefWidth="50.0" style="-fx-background-radius: 12; -fx-background-color: #ffffff80;" text="Orders :" />
+      <ListView fx:id="orders" layoutX="94.0" layoutY="199.0" prefHeight="176.0" prefWidth="263.0" />
+      <ListView fx:id="selected" layoutX="385.0" layoutY="199.0" prefHeight="176.0" prefWidth="181.0" />
+      <Button layoutX="94.0" layoutY="388.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="25.0" prefWidth="101.0" text="add Order" />
+      <Button layoutX="385.0" layoutY="388.0" mnemonicParsing="false" onAction="#removeOrder" text="remove Order" />
+      <Label alignment="CENTER" layoutX="32.0" layoutY="106.0" prefHeight="22.0" prefWidth="100.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Delivery Person :" />
+      <Button alignment="TOP_CENTER" layoutX="254.0" layoutY="456.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="101.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="65.0" prefHeight="22.0" prefWidth="89.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Delivery Area:" />
+      <Label alignment="CENTER" layoutX="36.0" layoutY="170.0" prefHeight="22.0" prefWidth="230.0" style="-fx-background-radius: 12; -fx-background-color: #ffffff80;" text="To add ExpressDelivery chose only 1 order:" />
+   </children>
+</AnchorPane>

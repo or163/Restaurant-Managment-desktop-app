@@ -1,0 +1,1 @@
+java --module-path "%cd%\javafx-sdk-16\lib" --add-modules=javafx.controls,javafx.fxml,javafx.media -jar project3.jar

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Add.AddDPController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="107.0" layoutY="14.0" prefHeight="17.0" prefWidth="385.0" text="Add Delivery Person">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFName" layoutX="125.0" layoutY="90.0" prefHeight="30.0" prefWidth="165.0" />
+      <TextField fx:id="txtLName" layoutX="125.0" layoutY="125.0" prefHeight="30.0" prefWidth="165.0" />
+      <DatePicker fx:id="date" layoutX="125.0" layoutY="165.0" prefHeight="30.0" prefWidth="165.0" />
+      <ComboBox fx:id="gender" layoutX="125.0" layoutY="207.0" prefHeight="25.0" prefWidth="165.0" />
+      <ComboBox fx:id="vehicle" layoutX="125.0" layoutY="247.0" prefHeight="25.0" prefWidth="165.0" />
+      <ComboBox fx:id="da" layoutX="125.0" layoutY="287.0" prefHeight="25.0" prefWidth="165.0" />
+      <Button fx:id="save" alignment="TOP_CENTER" layoutX="250.0" layoutY="420.0" mnemonicParsing="false" onAction="#save" prefHeight="29.0" prefWidth="101.0" text="save">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="24.0" layoutY="92.0" prefHeight="40.0" prefWidth="90.0" text="First Name :" />
+      <Label layoutX="24.0" layoutY="127.0" prefHeight="40.0" prefWidth="90.0" text="Last Name :" />
+      <Label layoutX="24.0" layoutY="167.0" prefHeight="40.0" prefWidth="90.0" text="Date of Birth :" />
+      <Label layoutX="24.0" layoutY="207.0" prefHeight="40.0" prefWidth="90.0" text="Gender :" />
+      <Label layoutX="24.0" layoutY="247.0" prefHeight="40.0" prefWidth="90.0" text="Vehicle :" />
+      <Label layoutX="24.0" layoutY="287.0" prefHeight="40.0" prefWidth="90.0" text="Delivery Area :" />
+      <Label fx:id="message" alignment="CENTER" layoutX="140.0" layoutY="460.0" prefHeight="17.0" prefWidth="319.0" />
+   </children>
+</AnchorPane>

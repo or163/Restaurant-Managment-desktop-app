@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pannelRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #c5c5c5;" styleClass="bodybgrest" stylesheets="@/application/mainBackground.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerController">
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" stylesheets="@/application/background.css" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mv" fitHeight="200.0" fitWidth="200.0" layoutX="-59.0" layoutY="58.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="179.0" layoutY="14.0" maxHeight="35.0" prefHeight="35.0" prefWidth="224.0" stylesheets="@/application/background.css" text="Welcome manager!" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TableView fx:id="deliveriesTV" layoutX="56.0" layoutY="88.0" prefHeight="167.0" prefWidth="471.0">
+              <columns>
+                <TableColumn fx:id="delId" prefWidth="35.333343505859375" text="Id" />
+                <TableColumn fx:id="dp" prefWidth="145.0" text="Delivery Person" />
+                  <TableColumn fx:id="da" prefWidth="144.0" text="Delivery Area" />
+                  <TableColumn fx:id="date" prefWidth="145.0" text="Delivery Date" />
+              </columns>
+            </TableView>
+            <Line endX="278.6666259765625" layoutX="233.0" layoutY="73.0" startX="-162.0" strokeWidth="30.0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Line>
+            <Label layoutX="245.0" layoutY="64.0" prefHeight="17.0" prefWidth="107.0" text="Deliveries in Action" textFill="WHITE" />
+            <TableView fx:id="ordersTV" layoutX="55.0" layoutY="294.0" prefHeight="167.0" prefWidth="471.0">
+               <columns>
+                  <TableColumn fx:id="ordId" prefWidth="35.333343505859375" text="Id" />
+                  <TableColumn fx:id="cust" prefWidth="84.00001525878906" text="Customer" />
+                  <TableColumn fx:id="delivery" prefWidth="79.33331298828125" text="Delivery" />
+                  <TableColumn fx:id="dishes" prefWidth="271.9999694824219" text="Dishes" />
+               </columns>
+            </TableView>
+            <Line endX="279.0" layoutX="232.0" layoutY="279.0" startX="-161.6" strokeWidth="30.0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Line>
+            <Label layoutX="251.0" layoutY="270.0" prefHeight="17.0" prefWidth="107.0" text="Pending Orders" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <AnchorPane fx:id="anchor" style="-fx-background-color: darkblue;" stylesheets="@/application/application.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbox" layoutY="50.0" prefHeight="450.0" prefWidth="100.0" style="-fx-background-color: darkblue;">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goHome" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Home" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@/Icons/home_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goDatabases" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Data&#10;Bases" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@/Icons/search_database_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goAdd" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Add" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="29.0">
+                           <image>
+                              <Image url="@/Icons/add_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goRemove" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Remove" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="29.0">
+                           <image>
+                              <Image url="@/Icons/minus_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goEdit" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Edit" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="29.0">
+                           <image>
+                              <Image url="@/Icons/edit_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#goQuerries" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Querries" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="29.0">
+                           <image>
+                              <Image url="@/Icons/tasks_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#SaveToSerelizebaleFile" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Save" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="25.0">
+                           <image>
+                              <Image url="@/Icons/save_48px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#GoLogin" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Log-out" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/logout_rounded_left_64px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-radius: 0; -fx-background-color: DARKBLUE;" text="Exit" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0">
+                           <image>
+                              <Image url="@/Icons/shutdown_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font name="Berlin Sans FB" size="12.0" />
+                     </font>
+                  </Button>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#MuteOnOff" prefHeight="32.0" prefWidth="36.0" style="-fx-background-color: darkblue;">
+                     <children>
+                        <ImageView fx:id="Audio" fitHeight="32.0" fitWidth="36.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <image>
+                              <Image url="@/Icons/audio_64px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="67.0" fitWidth="50.0" onMouseClicked="#showMenu" y="-7.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@/Icons/menu_50px.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </AnchorPane>
+   </left>
+</BorderPane>

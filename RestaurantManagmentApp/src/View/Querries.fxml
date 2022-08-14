@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Querries.QuerriesController">
+   <children>
+      <Circle layoutX="75.0" layoutY="100.0" onMouseClicked="#goGRLDList" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="225.0" layoutY="100.0" onMouseClicked="#goGetCooksByExpertise" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="375.0" layoutY="100.0" onMouseClicked="#goGetPopularComponents" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="525.0" layoutY="100.0" onMouseClicked="#goGetNumberOfDeliveriesPerType" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="75.0" layoutY="250.0" onMouseClicked="#goOrderWaitingTime" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="225.0" layoutY="250.0" onMouseClicked="#goDeliver" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="375.0" layoutY="250.0" onMouseClicked="#goCalcOrderRevenue" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="525.0" layoutY="250.0" onMouseClicked="#goGetDeliveriesByPerson" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="75.0" layoutY="399.0" onMouseClicked="#goRevenueFromExpressDeliveries" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="225.0" layoutY="399.0" onMouseClicked="#goGetProfitRelation" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Circle layoutX="375.0" layoutY="399.0" onMouseClicked="#goCreateAIMacine" radius="71.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5607843399047852" green="0.3137255012989044" blue="0.3137255012989044" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9473684430122375" green="0.9473684430122375" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Circle>
+      <Label alignment="CENTER" layoutX="29.0" layoutY="107.0" onMouseClicked="#goGRLDList" prefHeight="37.0" prefWidth="97.0" text="Get Relevant&#10;    Dish List" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="178.0" layoutY="107.0" onMouseClicked="#goGetCooksByExpertise" prefHeight="37.0" prefWidth="97.0" text=" Get Cooks&#10;By Expertise" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="463.0" layoutY="105.0" onMouseClicked="#goGetNumberOfDeliveriesPerType" prefHeight="60.0" prefWidth="129.0" text=" Get Number Of&#10;      Deliveries&#10;       per Type  " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="261.0" onMouseClicked="#goOrderWaitingTime" prefHeight="37.0" prefWidth="104.0" text="Order Waiting&#10;        Time" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="198.0" layoutY="261.0" onMouseClicked="#goDeliver" prefHeight="37.0" prefWidth="57.0" text="Deliver" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="319.0" layoutY="261.0" onMouseClicked="#goCalcOrderRevenue" prefHeight="37.0" prefWidth="112.0" text="     Calculate&#10;Order Revenue" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="469.0" layoutY="261.0" onMouseClicked="#goGetDeliveriesByPerson" prefHeight="37.0" prefWidth="104.0" text="Get Deliveries&#10;   By Person" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="407.0" onMouseClicked="#goRevenueFromExpressDeliveries" prefHeight="60.0" prefWidth="129.0" text="  Revenue From&#10;       Express &#10;       Deliveris" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="185.0" layoutY="407.0" onMouseClicked="#goGetProfitRelation" prefHeight="37.0" prefWidth="79.0" text="Get Profit&#10; Relation" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="338.0" layoutY="407.0" onMouseClicked="#goCreateAIMacine" prefHeight="37.0" prefWidth="73.0" text="Create AI&#10;Machine" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="323.0" layoutY="107.0" onMouseClicked="#goGetPopularComponents" prefHeight="37.0" prefWidth="104.0" text=" Get Popular&#10;Components" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="57.0" layoutX="196.0" layoutY="45.0" onMouseClicked="#goGetCooksByExpertise">
+         <image>
+            <Image url="@/Icons/chef_64px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="64.0" layoutX="43.0" layoutY="52.0" onMouseClicked="#goGRLDList">
+         <image>
+            <Image url="@/Icons/list_80px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="350.0" layoutY="53.0" onMouseClicked="#goGetPopularComponents">
+         <image>
+            <Image url="@/Icons/ingredients_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="50.0" layoutX="496.0" layoutY="57.0" onMouseClicked="#goGetNumberOfDeliveriesPerType">
+         <image>
+            <Image url="@/Icons/paper_plane_50px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="51.0" layoutY="213.0" onMouseClicked="#goOrderWaitingTime">
+         <image>
+            <Image url="@/Icons/Waiting_Room_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="200.0" layoutY="215.0" onMouseClicked="#goDeliver">
+         <image>
+            <Image url="@/Icons/Deliver_Food_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="349.0" layoutY="212.0" onMouseClicked="#goCalcOrderRevenue">
+         <image>
+            <Image url="@/Icons/cost_60px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="497.0" layoutY="213.0" onMouseClicked="#goGetDeliveriesByPerson">
+         <image>
+            <Image url="@/Icons/person_48px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="64.0" layoutX="45.0" layoutY="353.0" onMouseClicked="#goRevenueFromExpressDeliveries">
+         <image>
+            <Image url="@/Icons/Fast_Forward_100px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="71.0" fitWidth="64.0" layoutX="195.0" layoutY="348.0" onMouseClicked="#goGetProfitRelation">
+         <image>
+            <Image url="@/Icons/profit_100px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="350.0" layoutY="358.0" onMouseClicked="#goCreateAIMacine">
+         <image>
+            <Image url="@/Icons/critical_thinking_50px.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

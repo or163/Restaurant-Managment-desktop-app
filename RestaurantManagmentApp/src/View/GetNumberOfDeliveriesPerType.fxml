@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" stylesheets="@/application/background.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Querries.GetNumberOfDeliveriesPerTypeController">
+   <children>
+      <Label alignment="CENTER" layoutX="115.0" layoutY="14.0" prefHeight="35.0" prefWidth="405.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Get Number Of Deliveries Per Type">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ChosenType" layoutX="232.0" layoutY="83.0" onAction="#GetNumberOfDeliveriesPerType" prefWidth="150.0" />
+      <Label fx:id="resultt" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="122.0" prefHeight="69.0" prefWidth="89.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 15;" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="120.0" layoutY="83.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #ffffff80; -fx-background-radius: 12;" text="Delivery Type:" />
+   </children>
+</AnchorPane>
